@@ -72,6 +72,7 @@ function App() {
         <div className='contenedores'>
           <p className='p1'>Completas: {contadorCompletas}</p>
           <p className='p2'>Pendiente: {contadorPendientes}</p>
+          </div>
           {metas.map((m, index) => (
             <p key={index} className={`${m.completa ? 'completa' : ''} ${m.subrayada ? 'subrayada' : ''}`}>
               {m.texto}
@@ -80,7 +81,7 @@ function App() {
               {m.subrayada && <span className="linea"></span>}
             </p>
           ))}
-        </div>
+        
       </main>
     </div>
   );
